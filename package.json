@@ -1,0 +1,18 @@
+{
+  "name": "bkper-csv-export-app",
+  "version": "1.0.12",
+  "scripts": {
+    "open": "clasp open",
+    "pull": "clasp pull",
+    "push": "clasp push",
+    "watch": "yarn push --watch",
+    "version:patch": "yarn version --patch",
+    "version:minor": "yarn version --minor",
+    "version:major": "yarn version --major",
+    "preversion": "yarn push",
+    "postversion": "clasp deploy --description $npm_package_version --deploymentId AKfycbyv9AGZkKzEiDe4BSlfqjiPA6krvxrdlfQ7wil32QKHhzjE6w && git push && git push --tags && echo \"Successfully released version $npm_package_version!\""
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.3.0"
+  }
+}
