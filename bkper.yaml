@@ -1,0 +1,11 @@
+type: menu-app  #types available: webhook-bot / generic-app / menu-app / gas-bot
+
+# You can override the name from the repository
+# name: New Bkper App
+
+# Set your logo url from public host. Best fit 200x200 px. Use https:// 
+logo: https://static.thenounproject.com/png/632140-200.png
+
+menuUrl: https://script.google.com/macros/s/AKfycbyv9AGZkKzEiDe4BSlfqjiPA6krvxrdlfQ7wil32QKHhzjE6w/exec
+menuText: Export CSV
+
