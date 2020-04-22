@@ -6,5 +6,5 @@ type: menu-app  #types available: webhook-bot / generic-app / menu-app / gas-bot
 # Set your logo url from public host. Best fit 200x200 px. Use https:// 
 logo: https://static.thenounproject.com/png/632140-200.png
 
-menuUrl: http://www.africau.edu/images/default/sample.pdf
+menuUrl: https://script.google.com/macros/s/AKfycbyv9AGZkKzEiDe4BSlfqjiPA6krvxrdlfQ7wil32QKHhzjE6w/exec?query=${query}&bookId=${book.id}
 menuText: Export CSV
