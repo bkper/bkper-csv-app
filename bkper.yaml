@@ -10,3 +10,4 @@ scriptId: 1syyHwCGcvCVAUmVhYaTA1Lje2fwJhjbi9q-OVkr-Z8k2M5d335Cje0TM
 
 menuUrl: https://script.google.com/macros/s/AKfycbyv9AGZkKzEiDe4BSlfqjiPA6krvxrdlfQ7wil32QKHhzjE6w/exec?query=${query}&bookId=${book.id}
 menuText: Export CSV
+
