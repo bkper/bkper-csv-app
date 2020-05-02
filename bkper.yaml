@@ -1,5 +1,3 @@
-type: menu-app  #types available: generic-app / menu-app / gas-bot
-
 # You can override the name from the repository
 name: CSV Export App
 
