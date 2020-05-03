@@ -5,7 +5,7 @@
     "open": "clasp open",
     "pull": "clasp pull",
     "push": "clasp push",
-    "watch": "yarn push --watch",
+    "start": "yarn push --watch",
     "version:patch": "yarn version --patch",
     "version:minor": "yarn version --minor",
     "version:major": "yarn version --major",
