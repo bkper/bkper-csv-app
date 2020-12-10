@@ -19,4 +19,6 @@ function onFileCreated(event: bkper.Event) {
   }
 
   book.batchCreateTransactions(transactions);
+
+  return `Recorded ${transactions.length} transactions.`
 }
