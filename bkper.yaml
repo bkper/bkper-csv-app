@@ -20,5 +20,8 @@ scopes: >
 triggers: >
     onFileCreated
 
+filePatterns: >
+    *.csv
+
 apiVersion: v3
 deploymentId: AKfycbyT-UplFZeTyhhJA8dPgceN9kOkYIbuZeiA2FFfjF1Y2uyc6A
