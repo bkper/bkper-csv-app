@@ -1,13 +1,24 @@
 # You can override the name from the repository
-name: CSV Export App
+name: CSV Import/Export App
 
 # Set your logo url from public host. Best fit 200x200 px. Use https:// 
 logo: https://static.thenounproject.com/png/632140-200.png
 
-
 clientId: 544919458976-umsfo5b99o84auatmah2gvsc0d8ft91c.apps.googleusercontent.com
 scriptId: 1syyHwCGcvCVAUmVhYaTA1Lje2fwJhjbi9q-OVkr-Z8k2M5d335Cje0TM
 
-menuUrl: https://script.google.com/macros/s/AKfycbyv9AGZkKzEiDe4BSlfqjiPA6krvxrdlfQ7wil32QKHhzjE6w/exec?query=${query}&bookId=${book.id}
+menuUrl: https://script.google.com/macros/s/AKfycbyT-UplFZeTyhhJA8dPgceN9kOkYIbuZeiA2FFfjF1Y2uyc6A/exec?query=${query}&bookId=${book.id}
 menuText: Export CSV
 
+menuPopupWidth: 400
+menuPopupHeight: 400
+
+scopes: >
+    https://www.googleapis.com/auth/userinfo.email
+    https://www.googleapis.com/auth/script.external_request
+
+triggers: >
+    onFileCreated
+
+apiVersion: v3
+deploymentId: AKfycbyT-UplFZeTyhhJA8dPgceN9kOkYIbuZeiA2FFfjF1Y2uyc6A
