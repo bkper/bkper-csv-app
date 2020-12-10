@@ -10,10 +10,13 @@ function onFileCreated(event: bkper.Event) {
   let csv = file.getBlob().getDataAsString();
   let lines = csv.split('\n')
   let transactions: Bkper.Transaction[] = [];
-  lines.forEach(line => {
+  
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i];
     var description = line.split(';').map(e => e.split(',')).join(' ');
     let transaction = book.newTransaction().setDescription(description);
     transactions.push(transaction)
-  })
+  }
+
   book.batchCreateTransactions(transactions);
 }
