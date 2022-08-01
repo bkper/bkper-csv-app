@@ -1,6 +1,6 @@
 {
   "name": "bkper-csv-export-app",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "scripts": {
     "open": "clasp open",
     "pull": "clasp pull",
