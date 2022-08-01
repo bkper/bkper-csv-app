@@ -14,8 +14,8 @@
     "postversion": "yarn deploy && git push && git push --tags && echo \"Successfully released version $npm_package_version!\""
   },
   "devDependencies": {
-    "@bkper/bkper-api-types": "^3.7.0",
-    "@bkper/bkper-app-types": "^3.7.1",
+    "@bkper/bkper-api-types": "^5.1.6",
+    "@bkper/bkper-app-types": "^3.20.1",
     "@google/clasp": "^2.3.0"
   }
 }
