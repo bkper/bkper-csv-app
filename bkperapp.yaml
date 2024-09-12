@@ -1,7 +1,7 @@
-# You can override the name from the repository
+id: bkper-csv-app
 name: CSV Import/Export App
+description: Import and export CSV files to Bkper
 
-# Set your logo url from public host. Best fit 200x200 px. Use https:// 
 logo: https://static.thenounproject.com/png/632140-200.png
 
 clientId: 544919458976-umsfo5b99o84auatmah2gvsc0d8ft91c.apps.googleusercontent.com
@@ -13,15 +13,15 @@ menuText: Export CSV
 menuPopupWidth: 400
 menuPopupHeight: 400
 
-scopes: >
-    https://www.googleapis.com/auth/userinfo.email
-    https://www.googleapis.com/auth/script.external_request
+scopes:
+  - https://www.googleapis.com/auth/userinfo.email
+  - https://www.googleapis.com/auth/script.external_request
 
-triggers: >
-    onFileCreated
+events:
+  - FILE_CREATED
 
-filePatterns: >
-    *.csv
+filePatterns:
+  - "*.csv"
 
 apiVersion: v3
 deploymentId: AKfycbyT-UplFZeTyhhJA8dPgceN9kOkYIbuZeiA2FFfjF1Y2uyc6A
