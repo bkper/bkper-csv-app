@@ -1,18 +1,24 @@
 {
-    "name": "bkper-csv-app-gcf",
-    "version": "0.0.1",
-    "license": "MIT",
-    "main": "index.js",
-    "type": "module",
-    "projectId": "api-project-544919458976",
-    "functionName": "prod",
-    "scripts": {
-        "functions:enable": "gcloud services enable cloudfunctions.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com run.googleapis.com logging.googleapis.com --project $npm_package_projectId",
-        "functions:authorize": "gcloud alpha functions add-iam-policy-binding $npm_package_functionName --region=us-central1 --member=serviceAccount:bkper-hrd@appspot.gserviceaccount.com --role=roles/cloudfunctions.invoker --project $npm_package_projectId",
-        "functions:open": "open \"https://console.cloud.google.com/functions/details/us-central1/$npm_package_functionName?organizationId=305881217394&project=$npm_package_projectId&tab=logs\"",
-        "deploy": "gcloud functions deploy $npm_package_functionName --gen2 --region=us-central1 --no-allow-unauthenticated --runtime=nodejs18 --entry-point=doPost --trigger-http --max-instances=1 --memory=128Mi --timeout=360s --project=$npm_package_projectId"
-    },
-    "dependencies": {
-      "@google-cloud/functions-framework": "^2.0.0"
-    }
+  "name": "bkper-csv-app-gcf",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "projectId": "api-project-544919458976",
+  "functionName": "prod",
+  "scripts": {
+    "functions:enable": "gcloud services enable cloudfunctions.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com run.googleapis.com logging.googleapis.com --project $npm_package_projectId",
+    "functions:authorize": "gcloud alpha functions add-iam-policy-binding $npm_package_functionName --region=us-central1 --member=serviceAccount:bkper-hrd@appspot.gserviceaccount.com --role=roles/cloudfunctions.invoker --project $npm_package_projectId",
+    "functions:open": "open \"https://console.cloud.google.com/functions/details/us-central1/$npm_package_functionName?organizationId=305881217394&project=$npm_package_projectId&tab=logs\"",
+    "deploy": "gcloud functions deploy $npm_package_functionName --gen2 --region=us-central1 --no-allow-unauthenticated --runtime=nodejs18 --entry-point=doPost --trigger-http --max-instances=1 --memory=128Mi --timeout=360s --project=$npm_package_projectId",
+    "compile": "tsc"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^2.0.0"
+  },
+  "devDependencies": {
+    "gts": "^5.3.1",
+    "typescript": "^5.4.3",
+    "@types/node": "20.12.7"
+  }
 }

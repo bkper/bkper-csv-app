@@ -1,0 +1,16 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "declaration": false,
+    "sourceMap": true,
+    "typeRoots" : ["node_modules/@bkper", "node_modules/@types" ]    
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
