@@ -5,11 +5,11 @@ import 'source-map-support/register.js';
 import express from 'express';
 import httpContext from 'express-http-context';
 
-// import { EventHandlerTransactionPosted } from './EventHandlerTransactionPosted.js';
-
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import path from 'path';
+
+import { EventHandlerFileCreated } from './EventHandlerFileCreated.js';
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
@@ -51,8 +51,7 @@ async function handleEvent(req: Request, res: Response) {
 
         switch (event.type) {
             case 'FILE_CREATED':
-                // result = await new EventHandlerTransactionPosted().handleEvent(event);
-                result = { result: "TESTE" };
+                result = await new EventHandlerFileCreated().handleEvent(event);
                 break;
         }
 
