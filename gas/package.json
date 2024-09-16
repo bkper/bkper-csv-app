@@ -2,10 +2,12 @@
   "name": "bkper-csv-export-app",
   "version": "2.0.5",
   "scripts": {
+    "clasp:login": "clasp login && bun clasp:store",
+    "clasp:store": "cp ~/.clasprc.json ~/.clasprc-bkper.json",
     "open": "clasp open",
     "pull": "clasp pull",
     "push": "clasp push",
-    "watch": "bun push --watch --force",
+    "dev": "bun push --watch --force",
     "patch": "yarn version --patch",
     "minor": "yarn version --minor",
     "major": "yarn version --major",
@@ -15,6 +17,8 @@
   },
   "devDependencies": {
     "@bkper/bkper-app-types": "^3.34.2",
-    "@types/google-apps-script": "^1.0.83"
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.83",
+    "typescript": "^5.6.2"
   }
 }
