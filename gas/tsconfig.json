@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "none",
+    "experimentalDecorators": true,
+    "lib": [
+      "esnext"
+    ],
+    "target": "ES6",
+    "strict": true,
+    "sourceMap": true,
+    "typeRoots": [
+      "node_modules/@bkper",
+      "node_modules/@types"
+    ],
+    "noEmit": true
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules/"
+  ]
+}
