@@ -2,8 +2,6 @@ function doGet(e: GoogleAppsScript.Events.AppsScriptHttpRequestEvent) {
 
 	let bookId = e.parameter.bookId;
 
-	console.log("ACTIVATE")
-
 	if (bookId == null) {
 		//Handle deprecated param - Will be removed in future
 		bookId = e.parameter.ledgerId;
