@@ -1,5 +1,5 @@
 {
-  "name": "bkper-csv-export-app",
+  "name": "bkper-csv-app",
   "version": "2.0.5",
   "scripts": {
     "bkper:sync": "bkper app -u"

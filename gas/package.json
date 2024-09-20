@@ -1,5 +1,5 @@
 {
-  "name": "bkper-csv-export-app",
+  "name": "bkper-csv-app-gas",
   "version": "2.0.5",
   "scripts": {
     "clasp:login": "clasp login && bun clasp:store",
