@@ -1,6 +1,6 @@
 {
   "name": "bkper-csv-app-gas",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "scripts": {
     "clasp:login": "clasp login && bun clasp:store",
     "clasp:store": "cp ~/.clasprc.json ~/.clasprc-bkper.json",
