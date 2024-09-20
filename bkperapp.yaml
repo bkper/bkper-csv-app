@@ -16,8 +16,8 @@ menuUrl: https://script.google.com/macros/s/AKfycbyT-UplFZeTyhhJA8dPgceN9kOkYIbu
 menuUrlDev: https://script.google.com/macros/s/AKfycbwoLieMkb4Ng158261Jrn3Xa6eIDmVhPvoo0SvHGQ/dev?query=${query}&bookId=${book.id}
 menuText: Export CSV
 
-menuPopupWidth: 400
-menuPopupHeight: 400
+menuPopupWidth: 550
+menuPopupHeight: 550
 
 events:
   - FILE_CREATED
