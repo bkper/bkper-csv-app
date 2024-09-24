@@ -24,7 +24,7 @@ export class EventHandlerFileCreated {
                             }
                             await book.batchCreateTransactions(transactions);
 
-                            return { result: `Recorded ${transactions.length} transactions.` }
+                            return { result: `Recorded ${transactions.length} transaction(s).` }
                         }
                     }
                 }
