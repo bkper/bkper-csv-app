@@ -11,7 +11,7 @@ repoUrl: https://github.com/bkper/
 repoPrivate: false
 deprecated: false
 
-webhookUrl: https://us-central1-api-project-544919458976.cloudfunctions.net/prod
+webhookUrl: https://us-central1-api-project-544919458976.cloudfunctions.net/prodGen2
 menuUrl: https://script.google.com/macros/s/AKfycbyT-UplFZeTyhhJA8dPgceN9kOkYIbuZeiA2FFfjF1Y2uyc6A/exec?query=${query}&bookId=${book.id}
 menuUrlDev: https://script.google.com/macros/s/AKfycbwoLieMkb4Ng158261Jrn3Xa6eIDmVhPvoo0SvHGQ/dev?query=${query}&bookId=${book.id}
 menuText: Export CSV

@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "projectId": "api-project-544919458976",
-  "functionName": "prod",
+  "functionName": "prodGen2",
   "scripts": {
     "predev": "bun run build",
     "dev": "bun run-p watch:*",
