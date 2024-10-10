@@ -17,7 +17,7 @@
     "gcp-build": "yarn install --frozen-lockfile",
     "watch:compile": "tsc -w --incremental",
     "watch:webhook": "node webhook.js",
-    "watch:nodemon": "nodemon --watch ./dist/ --exec bun functions:dev",
+    "watch:nodemon": "NODE_ENV=development nodemon --watch ./dist/ --exec bun functions:dev",
     "functions:dev": "functions-framework --source=dist/ --target=doPost --port=3006",
     "functions:enable": "gcloud services enable cloudfunctions.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com run.googleapis.com logging.googleapis.com --project $npm_package_projectId",
     "functions:authorize": "gcloud alpha functions add-iam-policy-binding $npm_package_functionName --region=us-central1 --member=serviceAccount:bkper-hrd@appspot.gserviceaccount.com --role=roles/cloudfunctions.invoker --project $npm_package_projectId",
