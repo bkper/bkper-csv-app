@@ -19,7 +19,7 @@ export class EventHandlerFileCreated {
                             for (let i = 1; i < lines.length; i++) {
                                 const line = lines[i];
                                 const description = line.split(';').map(e => e.split(',')).join(' ');
-                                const transaction = book.newTransaction().setDescription(description);
+                                const transaction = new Transaction(book).setDescription(description);
                                 transactions.push(transaction);
                             }
                             await book.batchCreateTransactions(transactions);
