@@ -2,7 +2,9 @@ id: bkper-csv-app
 name: Bkper CSV App
 description: Import and export CSV files to Bkper
 
-logoUrl: https://static.thenounproject.com/png/632140-200.png
+logoUrl: https://storage.googleapis.com/bkper-public/logos/agents/bkper-csv-app-light.svg
+logoUrlDark: https://storage.googleapis.com/bkper-public/logos/agents/bkper-csv-app-dark.svg
+
 website: https://bkper.com/apps/bkper-csv-app
 ownerName: Bkper
 ownerLogoUrl: https://avatars.githubusercontent.com/u/11943086?v=4
